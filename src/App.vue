@@ -13,7 +13,7 @@ const selectedPlan = ref('')
 const noButtonStyle = ref({})
 
 
-const youtubeUrl = ref('https://music.youtube.com/watch?v=8wWrzr3_46Y')
+const youtubeUrl = ref('https://music.youtube.com/watch?v=ruBsGe2HLmQ&list=LM')
 const girlName = ref('Зоя')
 
 const greetingText = computed(() => {
@@ -23,7 +23,7 @@ const greetingText = computed(() => {
 })
 
 
-const musicStart = ref(10)
+const musicStart = ref(20)
 const musicEnd = ref(220)
 
 const plans = [
