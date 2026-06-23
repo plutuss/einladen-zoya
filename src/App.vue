@@ -165,9 +165,9 @@ const submitAnswer = async () => {
   }
 
   isSubmitted.value = true
-
-  const token = '6103401011:AAFuewzElsUxhZP7m-K6kapARM80mW3PKjQ'
-  const chatId = 'TestDeveloperLaravelBot'
+  
+  const token = '5319963583:AAFeIk1Z-SnjJ4Lpihg0rUTH2frP034ZS9c'
+  const chatId = '-1001721863285'
 
   const message = `
 💌 Нове запрошення прийнято!
