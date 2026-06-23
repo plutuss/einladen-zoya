@@ -161,9 +161,32 @@ const selectPlan = (plan) => {
 const submitAnswer = async () => {
   if (!isFormValid.value) {
     return
+  
   }
 
   isSubmitted.value = true
+
+  const token = '6103401011:AAFuewzElsUxhZP7m-K6kapARM80mW3PKjQ'
+  const chatId = 'TestDeveloperLaravelBot'
+
+  const message = `
+💌 Нове запрошення прийнято!
+
+Дата: ${selectedDate.value}
+Час: ${selectedTime.value}
+Варіант: ${selectedPlan.value}
+  `
+
+  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: message,
+    }),
+  })
 
   console.log({
     date: selectedDate.value,
