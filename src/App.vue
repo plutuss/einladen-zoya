@@ -517,7 +517,7 @@ const submitAnswer = async () => {
     </div>
   </div>
 
-  <Teleport to="body">
+  <Teleport to="body" v-if="!showForm && !isSubmitted">
 
     <button
 
