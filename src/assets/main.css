@@ -1,6 +1,11 @@
 @import './base.css';
 @import "tailwindcss";
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   margin: 0 auto;
   padding: 0;
@@ -30,6 +35,5 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }

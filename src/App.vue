@@ -541,6 +541,13 @@ const submitAnswer = async () => {
 </template>
 
 <style scoped>
+
+#app {
+  margin: 0 auto;
+  padding: 0;
+
+}
+
 .petal {
   position: absolute;
   top: -40px;
